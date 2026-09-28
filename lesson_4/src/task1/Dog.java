@@ -1,3 +1,5 @@
+package task1;
+
 class Dog extends Animal {
     private static int dogCount = 0;
 

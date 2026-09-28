@@ -1,3 +1,5 @@
+package task1;
+
 abstract class Animal {
     protected String name;
     protected int maxRunDistance;

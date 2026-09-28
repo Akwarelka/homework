@@ -1,4 +1,6 @@
-public class Task1Main {
+package task1;
+
+public class Main {
     public static void main(String[] args) {
         Dog dog1 = new Dog("Бобик");
         Cat cat1 = new Cat("Барсик");

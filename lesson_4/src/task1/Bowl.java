@@ -1,3 +1,5 @@
+package task1;
+
 class Bowl {
     private int food;
 

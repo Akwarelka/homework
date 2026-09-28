@@ -1,22 +1,28 @@
-class Circle implements Shape {
-    private double radius;
+package task2;
+
+class Triangle implements Shape {
+    private double a, b, c;
     private String fillColor;
     private String borderColor;
 
-    public Circle(double radius, String fillColor, String borderColor) {
-        this.radius = radius;
+    public Triangle(double a, double b, double c, String fillColor, String borderColor) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
         this.fillColor = fillColor;
         this.borderColor = borderColor;
     }
 
     @Override
     public double getArea() {
-        return Math.PI * radius * radius;
+
+        double p = getPerimeter() / 2;
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
     @Override
     public double getPerimeter() {
-        return 2 * Math.PI * radius;
+        return a + b + c;
     }
 
     @Override
@@ -25,3 +31,4 @@ class Circle implements Shape {
     @Override
     public String getBorderColor() { return borderColor; }
 }
+

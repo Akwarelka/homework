@@ -1,3 +1,5 @@
+package task1;
+
 class Cat extends Animal {
     private static int catCount = 0;
     private boolean satiety;
