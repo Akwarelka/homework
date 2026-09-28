@@ -17,7 +17,6 @@ public class Product {
         this.isReserved = isReserved;
     }
 
-    // Вывод информации об объекте в консоль
     public void printInfo() {
         System.out.println("Информация о товаре");
         System.out.println("Название: " + name);

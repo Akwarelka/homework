@@ -5,9 +5,9 @@ public class Park {
     }
 
     public class Attraction {
-        private String attractionName;  // Название аттракциона
-        private String workingHours;    // Время работы (например, "10:00 - 22:00")
-        private double price;           // Стоимость
+        private String attractionName;
+        private String workingHours;
+        private double price;
 
         public Attraction(String attractionName, String workingHours, double price) {
             this.attractionName = attractionName;
