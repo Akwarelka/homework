@@ -23,7 +23,7 @@ public class Product {
         System.out.println("Дата производства: " + productionDate);
         System.out.println("Производитель: " + manufacturer);
         System.out.println("Страна происхождения: " + countryOfOrigin);
-        System.out.println("Цена: " + price + " USD");
+        System.out.println("Цена: " + price + " USD"); ///////////
         System.out.println("Забронирован: " + (isReserved ? "Да" : "Нет"));
         System.out.println();
     }
