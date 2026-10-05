@@ -20,7 +20,7 @@ public class Main {
             cat.eat(bowl, 10);
         }
 
-        System.out.println("\nСтатус сытости котов");
+        System.out.println("\nСтатус сытости котов"); /////
         for (Cat cat : cats) {
             System.out.println(cat.name + " сыт: " + cat.isSatiated());
         }
