@@ -121,6 +121,6 @@ public class StudentTask {
         System.out.println("\nВывод студентов по курсам:");
         printStudents(students, 2);
         printStudents(students, 3);
-        printStudents(students, 4);         /////////
+        printStudents(students, 4);
     }
 }
