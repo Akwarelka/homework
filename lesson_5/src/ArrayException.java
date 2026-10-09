@@ -74,4 +74,4 @@ public class ArrayException {
             System.out.println("Детали ошибки: " + e.toString());
         }
     }
-}
+}///////////////
