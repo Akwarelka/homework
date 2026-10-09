@@ -34,5 +34,7 @@ public class PhoneBook {
         System.out.println("Телефоны Петрова: " + book.get("Петров"));
         System.out.println("Телефон Сидорова: " + book.get("Сидоров"));
         System.out.println("Телефон Смирнова: " + book.get("Смирнов"));
+        System.out.println("Телефон Кузнецова: " + book.get("Кузнецов"));
+        System.out.println("Телефон Соколова: " + book.get("Соколов"));
     }
 }
