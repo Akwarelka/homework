@@ -24,7 +24,7 @@ public class ArrayException {
         testArray(invalidSizeArray);
         testArray(invalidDataArray);
 
-        System.out.println("\nГенерация ArrayIndexOutOfBoundsException");/////////////////
+        System.out.println("\nГенерация ArrayIndexOutOfBoundsException");
         ArrayIndexOutOfBounds();
     }
 
