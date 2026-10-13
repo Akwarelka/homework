@@ -21,7 +21,7 @@ public class PhoneBook {
     public static void main(String[] args) {
         PhoneBook book = new PhoneBook();
 
-        book.add("Иванов", "+7-999-111-22-33");/////////
+        book.add("Иванов", "+7-999-111-22-33");
         book.add("Петров", "+7-999-222-33-44");
         book.add("Сидоров", "+7-999-333-44-55");
         book.add("Иванов", "+7-999-444-55-66");
