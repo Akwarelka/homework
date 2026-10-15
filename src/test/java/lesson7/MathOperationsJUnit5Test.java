@@ -35,7 +35,6 @@ public class MathOperationsJUnit5Test {
         assertEquals(120L, res5);
     }
 
-    // 2) Тест вычисления площади треугольника
     @Test
     @DisplayName("Тест вычисления площади треугольника")
     void testTriangleArea() {
@@ -49,7 +48,6 @@ public class MathOperationsJUnit5Test {
         assertEquals(25.0, area, 0.0001);
     }
 
-    // 3) Тест арифметических операций
     @Test
     @DisplayName("Тест арифметических операций")
     void testArithmeticOperations() {
