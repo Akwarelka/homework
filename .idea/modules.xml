@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/postman-echo-tests.iml" filepath="$PROJECT_DIR$/postman-echo-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework.iml" filepath="$PROJECT_DIR$/homework.iml" />
     </modules>
   </component>
 </project>
