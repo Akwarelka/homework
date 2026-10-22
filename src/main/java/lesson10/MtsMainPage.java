@@ -13,13 +13,10 @@ public class MtsMainPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
 
-    // Баннер согласия Cookie
     private final By cookieAcceptButton = By.xpath("//button[contains(@class, 'btn') and (contains(text(), 'Принять') or contains(text(), 'Согласен'))] | //div[contains(@class, 'cookie')]//button");
 
-    // Dropdown выбора типа оплаты
     private final By selectDropdown = By.xpath("//button[contains(@class, 'select__header')]");
 
-    // Кнопка "Продолжить"
     private final By continueButton = By.xpath("//form[@id='pay-connection']//button[contains(text(), 'Продолжить')] | //button[text()='Продолжить']");
 
     public MtsMainPage(WebDriver driver) {
@@ -61,7 +58,6 @@ public class MtsMainPage {
         safeClick(By.xpath(optionXpath));
     }
 
-    // Гибкое получение placeholder с учетом normalize-space
     public String getPlaceholderText(String expectedPlaceholder) {
         By inputLocator = By.xpath(String.format(
                 "//input[contains(@placeholder, '%s') or contains(normalize-space(@placeholder), '%s')]",

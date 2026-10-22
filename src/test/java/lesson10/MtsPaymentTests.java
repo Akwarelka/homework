@@ -60,21 +60,17 @@ public class MtsPaymentTests {
         String sum = "10.00";
         String email = "test@example.com";
 
-        // Заполнение данных
         mainPage.selectPaymentOption("Услуги связи");
         mainPage.fillConnectionFields(phone, sum, email);
         mainPage.clickContinue();
 
-        // Проверка модального окна
         MtsPaymentModalPage modalPage = new MtsPaymentModalPage(driver);
         modalPage.switchToPaymentFrame();
 
-        // Проверка корректности отображения суммы и номера телефона
         assertTrue(modalPage.getAmountFromModal().contains("10.00"), "Сумма некорректна");
         assertTrue(modalPage.getSubmitButtonText().contains("10.00"), "Сумма на кнопке некорректна");
         assertTrue(modalPage.getPhoneNumberFromModal().contains("375297777777"), "Номер телефона некорректен");
 
-        // Проверка наличия иконок платежных систем
         assertTrue(modalPage.isPaymentIconsDisplayed(), "Иконки платежных систем не отображаются");
     }
 }
