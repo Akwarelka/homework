@@ -32,25 +32,29 @@ public class MtsPaymentTests {
     @Test
     @DisplayName("1. Проверка плейсхолдеров незаполненных полей для всех вариантов оплаты")
     public void testPlaceholdersForAllOptions() {
-        // Услуги связи
+
         mainPage.selectPaymentOption("Услуги связи");
         assertEquals("Номер телефона", mainPage.getPlaceholderText("Номер телефона"));
         assertEquals("Сумма", mainPage.getPlaceholderText("Сумма"));
+        assertEquals("E-mail для отправки чека", mainPage.getPlaceholderText("E-mail для отправки чека"));
 
-        // Домашний интернет
+
         mainPage.selectPaymentOption("Домашний интернет");
         assertEquals("Номер абонента", mainPage.getPlaceholderText("Номер абонента"));
         assertEquals("Сумма", mainPage.getPlaceholderText("Сумма"));
+        assertEquals("E-mail для отправки чека", mainPage.getPlaceholderText("E-mail для отправки чека"));
 
-        // Рассрочка
+
         mainPage.selectPaymentOption("Рассрочка");
         assertEquals("Номер счета на 44", mainPage.getPlaceholderText("Номер счета на 44"));
         assertEquals("Сумма", mainPage.getPlaceholderText("Сумма"));
+        assertEquals("E-mail для отправки чека", mainPage.getPlaceholderText("E-mail для отправки чека"));
 
-        // Задолженность
+
         mainPage.selectPaymentOption("Задолженность");
         assertEquals("Номер счета на 2073", mainPage.getPlaceholderText("Номер счета на 2073"));
         assertEquals("Сумма", mainPage.getPlaceholderText("Сумма"));
+        assertEquals("E-mail для отправки чека", mainPage.getPlaceholderText("E-mail для отправки чека"));
     }
 
     @Test
